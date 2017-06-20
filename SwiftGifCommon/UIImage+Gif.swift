@@ -89,13 +89,7 @@ extension UIImage {
                 Unmanaged.passUnretained(kCGImagePropertyGIFDelayTime).toOpaque()), to: AnyObject.self)
         }
 
-        delay = delayObject as? Double ?? 0
-
-        if delay < 0.1 {
-            delay = 0.1 // Make sure they're not too fast
-        }
-
-        return delay
+        return delayObject as? Double ?? 0
     }
 
     internal class func gcdForPair(_ a: Int?, _ b: Int?) -> Int {
