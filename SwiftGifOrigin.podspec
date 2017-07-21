@@ -9,6 +9,7 @@ Pod::Spec.new do |spec|
 
   spec.ios.deployment_target = '8.0'
   spec.tvos.deployment_target = '9.0'
+  spec.watchos.deployment_target = '3.0'
 
   spec.source_files = 'SwiftGifCommon/*.swift'
 end
